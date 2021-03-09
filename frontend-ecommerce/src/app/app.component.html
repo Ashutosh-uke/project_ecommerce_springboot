@@ -1,0 +1,91 @@
+<div class="page-wrapper">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a href="/">
+        <img src="assets/images/logo.png" alt="krishikendra" class="img-responsive">
+      </a>
+    </div>
+
+    <app-product-category-menu></app-product-category-menu>
+
+  </aside>
+  <!-- END MENU SIDEBAR-->
+
+  <div class="page-container">
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+
+            <app-search></app-search>
+
+            <app-login-status></app-login-status>
+
+            <app-cart-status></app-cart-status>
+
+          </div>
+          <div class="account-wrap"></div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <!-- MAIN CONTENT-->
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+
+<!-- ENDS PAGE CONTAINER -->
+
+<!-- 
+  <footer>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</footer>
+
+-->
+
+<footer>
+  <div class="pt-2 pb-2 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company">
+          <h2>ABOUT US</h2>
+          <p class="pr-5 text-white-50">"Transforming the Future of Farmers"<br>KrishiKendra is India’s largest Agri
+            Inputs Marketplace Platform providing wide choice of quality agricultural products and personalized advisory
+            by leveraging its Technology offering for farmer empowerment at their doorstep.</p>
+          <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i
+                class="fa fa-linkedin-square"></i></a></p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links">
+          <h4 class="mt-lg-0 mt-sm-3">LINKS</h4>
+          <ul class="m-0 p-0">
+            <li>- <a routerLink="/category/1">Vegetables</a></li>
+            <li>- <a routerLink="/category/2">Seeds</a></li>
+            <li>- <a routerLink="/category/3">Fertilizers</a></li>
+            <li>- <a routerLink="/category/4">Machinery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location">
+          <h4 class="mt-lg-0 mt-sm-4">LOCATION</h4>
+          <p>block-22, Sector-75, Agripark <br>Hyderabad-500010</p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>1800-833-1111 - (Toll Free)</p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>95959-95959 - (Technical Support)</p>
+          <p><i class="fa fa-envelope-o mr-3"></i>agricode.care@gmail.com</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col copyright">
+          <p class=""><small class="text-white-50">© 2021. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

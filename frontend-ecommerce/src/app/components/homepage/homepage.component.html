@@ -1,0 +1,94 @@
+<br>
+<br>
+<br>
+<br>
+
+<div class="wrapper1">
+   
+ <!-- </div>
+<div class="live-img"> -->
+
+   <div>
+
+        <!-- Carousel Banner-->
+
+       <br>
+       <br>
+       <br>
+          
+            <ngb-carousel id="banner" *ngIf="imagesBanner" >
+                <ng-template ngbSlide *ngFor="let image of imagesBanner">
+                  <div class="picsum-img-wrapper">
+                    <img [src]="image" alt="Random slide">
+                  </div>
+                  
+                </ng-template>
+              </ngb-carousel>
+               
+              <br>
+              <br>
+        
+            <!-- Carousel Banner Ends-->
+
+
+        <h1>Top Selling Products</h1>
+
+    <a id="home-img1" routerLink="/products/3">
+        <img  src="../../../assets/images/products/vegetables/vegetable-1002.png" />
+    </a>
+
+    <a id="home-img2" routerLink="/products/36">
+        <img  src="../../../assets/images/products/machinery/machinery-1002.png" />
+    </a>
+
+    <a id="home-img3" routerLink="/products/26">
+        <img  src="../../../assets/images/products/fertilizers/fertilizer-1003.png" />
+    </a>
+        <br>
+
+        <a id="home-img1" routerLink="/products/13">
+            <img  src="../../../assets/images/products/seeds/seed-1001.png" />
+        </a>
+    
+        <a id="home-img2" routerLink="/products/7">
+            <img  src="../../../assets/images/products/vegetables/vegetable-1006.png" />
+        </a>
+    
+        <a id="home-img3" routerLink="/products/37">
+            <img  src="../../../assets/images/products/machinery/machinery-1003.png" />
+        </a>
+            <br>
+
+    <a id="home-img4" routerLink="/category/1">
+        <img  src="../../../assets/images/products/homepageImages/middle.jpg" />
+    </a>
+
+        <h1>Upcoming Products</h1>
+    </div>
+
+
+    
+    <!-- Carousel -->
+    <ngb-carousel id="upcoming" #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let img of imagesUpcoming; index as i">
+          <div class="carousel-caption">
+          </div>
+          <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper" width="100%">
+              <img [src]="img" alt="My image {{i + 1}} description">
+            </div>
+          </a>
+        </ng-template>
+      </ngb-carousel>
+      
+    
+
+      <!-- Caruosel Ends -->
+
+
+<br>
+<br>
+<br>
+
+
+</div>
